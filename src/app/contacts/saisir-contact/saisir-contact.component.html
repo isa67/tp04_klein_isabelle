@@ -1,0 +1,17 @@
+<p>Saisie contact</p>
+
+<form [formGroup]="contactForm">
+  <label>Nom : <input type="text" formControlName="nom" /></label>
+  <br />
+  <label>Prenom : <input type="text" formControlName="prenom" /></label>
+  <br />
+
+  <label>Tel : <input type="text" formControlName="tel" /></label>
+  <br />
+  <label>Favoris : <input type="checkbox" formControlName="favoris" /></label>
+
+  <button (click)="addContact()">Ajouter</button>
+</form>
+
+<br />
+<app-liste-contacts></app-liste-contacts>
